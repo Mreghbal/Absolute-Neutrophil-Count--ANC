@@ -1,19 +1,51 @@
-# Absolute-Neutrophil-Count--ANC
-Python code for calculating Absolute Neutrophil Count (ANC) using the White Blood Cell (WBC) count and the percentage of neutrophils. It includes all the required parameters and handles the calculations based on actual conditions
-This code defines a function calculate_anc that takes in the White Blood Cell (WBC) count and the percentage of neutrophils as parameters. It then calculates the Absolute Neutrophil Count (ANC) by multiplying the WBC count with the neutrophil percentage divided by 100.
+# Absolute Neutrophil Count (ANC) Calculator
 
-The example usage at the end demonstrates how to call the function with sample values. You can modify the values of wbc_count and neutrophil_percentage to calculate the ANC for different scenarios.
+This repository contains a Python script that calculates the Absolute Neutrophil Count (ANC) using the White Blood Cell (WBC) count and the percentage of neutrophils. The ANC is an important parameter used in clinical practice to assess the immune system's ability to fight infections. This README provides a detailed explanation of the subject, step-by-step instructions on running and using the code, and information on how to connect with me on LinkedIn and Twitter.
 
-Please note that this code provides a basic implementation for calculating ANC using the WBC count and neutrophil percentage. In clinical practice, there may be additional considerations or adjustments depending on specific guidelines, medical conditions, and other factors. Therefore, it's important to consult with healthcare professionals or refer to established protocols for accurate ANC calculations in clinical settings.
+## Table of Contents
+- [Introduction](#introduction)
+- [Explanation](#explanation)
+- [Usage](#usage)
+- [Connect with Me](#connect-with-me)
 
-In addition to using the White Blood Cell (WBC) count and neutrophil percentage, there are a few other methods for calculating the Absolute Neutrophil Count (ANC). Here are two commonly used alternative approaches:
+## Introduction
+The Absolute Neutrophil Count (ANC) is a measure of the number of neutrophils, a type of white blood cell, in a given volume of blood. Neutrophils play a crucial role in the body's defense against bacterial and fungal infections. ANC is commonly used in clinical settings to assess a patient's risk of developing infections and to guide treatment decisions, such as the administration of antibiotics or the adjustment of chemotherapy doses.
 
-1. Manual Neutrophil Count:
-Instead of relying on the neutrophil percentage, this method involves manually counting the absolute number of neutrophils in a blood smear under a microscope. The ANC is then calculated by multiplying the manual neutrophil count by the appropriate factor based on the total WBC count.
+This repository provides a Python function, `calculate_anc`, that takes the White Blood Cell (WBC) count and the percentage of neutrophils as input parameters and calculates the ANC. The formula used for the calculation is:
 
-2. Complete Blood Count (CBC) with Differential:
-A Complete Blood Count (CBC) test provides a breakdown of different types of white blood cells, including neutrophils. By obtaining the absolute counts of each type of white blood cell from the CBC with differential, the ANC can be directly calculated by summing the absolute counts of the neutrophils.
+```
+ANC = WBC count * neutrophil percentage / 100
+```
 
-It's important to note that different methods may be used in different clinical settings or situations, depending on available resources, time constraints, and specific requirements. The choice of method may also depend on the accuracy and precision required for the ANC calculation in a particular medical context.
+## Explanation
+The `calculate_anc` function in the script performs the following steps to calculate the ANC:
 
-When calculating ANC, it's recommended to follow established guidelines and consult with healthcare professionals who are familiar with the specific protocols and practices employed in your region or healthcare facility. They can provide guidance on the most appropriate method for ANC calculation based on the specific circumstances.
+1. Accepts the `wbc_count` and `neutrophil_percentage` as input parameters.
+2. Multiplies the `wbc_count` by the `neutrophil_percentage` divided by 100 to obtain the ANC.
+3. Returns the calculated ANC value.
+
+The example usage provided in the script demonstrates how to call the `calculate_anc` function with sample values. You can modify the values of `wbc_count` and `neutrophil_percentage` to calculate the ANC for different scenarios.
+
+## Usage
+To use this code, follow the steps below:
+
+1. Clone the repository your local machine or download the `calculate_anc.py` file.
+2. Make sure you have Python installed on your system (version 3.0 or above).
+3. Open a terminal or command prompt and navigate the directory where the `calculate_anc.py` file located.
+4. Run the following command to execute the script:
+
+   ```bash
+   python calculate_anc.py
+  `
+
+5. The script will output the calculated ANC value based on the provided `wbc_count` and `neutrophil_percentage`.
+
+Feel free to modify the values of `wbc_count` and `neutrophil_percentage` in the example usage section to calculate the ANC for different scenarios.
+
+## Connect with Me
+If you have any questions or suggestions regarding this project or any other topic related to healthcare or programming, feel free to connect with me on LinkedIn and Twitter.
+
+LinkedIn: [Reza Eghbal](https://www.linkedin.com/in/mreghbal)  
+Twitter: [Reza Eghbal](https://twitter.com/mreghbal)
+
+I appreciate your support and would love to connect with you to share more valuable content and insights.
